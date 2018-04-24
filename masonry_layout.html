@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>masonry_layout</title>
+    <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inconsolata', monospace;
+            padding 100px;
+            margin:200px;
+            margin-top:0px;
+            background: url(//subtlepatterns.com/patterns/scribble_light.png);
+        }
+        h1 {
+            font-size: 50px;
+            text-align: center;
+            font-family: 'Jura', sans-serif;
+        }
+        #columns {
+            column-count: 3;
+            column-gap:15px;
+            
+        }
+        #columns figure {
+            background-color:white;
+            display:inline-block;
+            margin:0px;
+            margin-bottom: 30px;
+            border:1px solid rgba(0,0,0,0.2);
+            padding: 10px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+            
+        }
+        #columns figure img {
+            width:100%;
+        }
+        #columns figure figcaption {
+            border-top: 1px solid rgba(0,0,0,0.2);
+            padding:10px;
+            margin-top:11px;
+            text-align: center;
+        }
+        div#columns:hover figure:not(:hover) {
+	        opacity: 0.4;
+        }
+        small > a {
+            text-decoration: none;
+            color: coral;
+        }
+        small > a:visited {
+            color:gray;
+            text-decoration: underline;
+        }
+        small > a:hover {
+            color:antiquewhite;
+        }
+        small{
+            float:right;
+        }
+    </style>
+</head>
+<body>
+   <h1>Disny Pinterest Columnar layout</h1>
+    <div id="columns">
+      <figure>
+        <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/cinderella.jpg">
+        <figcaption>Cinderella wearing European fashion of the mid-1860’s</figcaption>
+      </figure>
+ 
+      <figure>
+        <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/rapunzel.jpg">
+        <figcaption>Rapunzel, clothed in 1820’s period fashion</figcaption>
+      </figure>
+ 
+      <figure>
+        <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/belle.jpg">
+        <figcaption>Belle, based on 1770’s French court fashion</figcaption>
+      </figure>
+ 
+      <figure>
+        <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/mulan_2.jpg">
+        <figcaption>Mulan, based on the Ming Dynasty period</figcaption>
+      </figure>
+ 
+      <figure>
+        <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/sleeping-beauty.jpg">
+        <figcaption>Sleeping Beauty, based on European fashions in 1485</figcaption>
+      </figure>
+ 
+      <figure>
+        <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/pocahontas_2.jpg">
+        <figcaption>Pocahontas based on 17th century Powhatan costume</figcaption>
+      </figure>
+ 
+      <figure>
+        <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/snow-white.jpg">
+        <figcaption>Snow White, based on 16th century German fashion</figcaption>
+      </figure>    
+ 
+      <figure>
+        <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/ariel.jpg">
+        <figcaption>Ariel wearing an evening gown of the 1890’s</figcaption>
+      </figure>
+ 
+      <figure>
+        <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/tiana.jpg">
+        <figcaption>Tiana wearing the <i>robe de style</i> of the 1920’s</figcaption>
+      </figure>
+    </div>
+    <footer>
+        <small>sooyeon &copy; <a href="https://www.facebook.com/profile.php?id=100004853981745">HOMEPAGE</a></small>
+    </footer> 
+</body>
+</html>
